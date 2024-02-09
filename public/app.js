@@ -38,17 +38,3 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 // <!------------------ FORM SUBMISSION -------------------->
-
-var form = document.getElementById('form');
-
-// form.addEventListener('submit', (event) => {
-//   event.preventDefault();
-//   var name = document.getElementById('name').value;
-//   var email = document.getElementById('email').value;
-//   var message = document.getElementById('message').value;
-
-//   const msgToMail = `mail.to:pritambose099@gmail.com?subject=Form Submission&body=Name: ${name}%0AEmail: ${email}%0A%0AMessage: ${message}`;
-
-//   // Opens the default email client with the mailto link
-//   window.location.href = msgToMail;
-// })

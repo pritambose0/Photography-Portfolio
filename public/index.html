@@ -1,323 +1,668 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Debika Production House</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
-</head>
-<body>
+  </head>
+  <body>
+
+
     <!--------------------- NAVBAR -------------------------->
 
-    <header class="w-full flex justify-center fixed top-0 bg-transparent z-50" id="navbar">
-        <nav class="container mx-10 md:mx-16 py-1 flex justify-between">
+    <header
+      class="w-full flex justify-center fixed top-0 bg-transparent z-50"
+      id="navbar"
+    >
+      <nav class="container mx-10 md:mx-16 py-1 flex justify-between">
+        <img
+          class="w-[90px] cursor-pointer bg-transparent p-5 pl-0"
+          src="./assets/img/logo.png"
+        />
 
-            <img class="w-[90px] cursor-pointer bg-transparent p-5 pl-0" src="./assets/img/logo.png">
-
-
-            <div class="hidden md:flex items-center gap-5">
-                <a class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out" href="#">HOME</a>
-                <a class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out" href="#">PORTFOLIO</a>
-                <a class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out" href="#">ABOUT US</a>
-                <a class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out" href="#">SERVICE</a>
-            </div>
-            <div class="hidden md:flex items-center">
-                <button class="font-bold font-Poppins bg-green rounded-xl px-4 py-3 text-sm text-dark outline-none border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out">LET'S TALK</button>
-            </div>
-
-            <!--------------- HAMBURGER BUTTON ------------------->
-
-            <div class="flex items-center justify-center mr-2 z-10 md:hidden">
-                    <i class="ri-menu-4-line text-2xl font-semibold cursor-pointer text-white" id="hamburger" onclick="toggleMenu()"></i>
-                    <i class="hidden ri-close-line text-2xl font-semibold text-white cursor-pointer" id="close-btn" onclick="toggleMenu()"></i>
-            </div>
-        
-        </nav>
-
-        <!--------------- NAVBAR MOBILE VIEW ------------------->
-
-        <div class="md:hidden">
-            <div class="absolute right-[-100%] top-0 h-screen w-2/3  bg-dark transition-all ease-in duration-300" id="mobile-menu">
-                <div class="flex flex-col items-center gap-6 p-8">
-                    <div class="w-[70px] flex items-center justify-center">
-                        <img class="ml-2 mt-8 cursor-pointer p-1" src="./assets/img/logo.png">
-                    </div>
-                    
-                    <div class="flex flex-col items-center gap-8 mt-5">
-                        <a class="font-semibold text-sm cursor-pointer text-white hover:text-green transition duration-300 ease-in-out" href="#">HOME</a>
-                        <a class="font-medium text-sm cursor-pointer text-white hover:text-green transition duration-300 ease-in-out" href="#">PORTFOLIO</a>
-                        <a class="font-medium text-sm cursor-pointer text-white hover:text-green transition duration-300 ease-in-out" href="#">ABOUT US</a>
-                        <a class="font-medium text-sm cursor-pointer text-white hover:text-green transition duration-300 ease-in-out" href="#">SERVICE</a>
-
-                        <button class="font-bold bg-green rounded-lg px-4 py-3 text-sm text-dark outline-none border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out">LET'S TALK</button>
-                    </div>
-                </div>
-                
-            </div>
+        <div class="hidden md:flex items-center gap-5">
+          <a
+            class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out"
+            href="#"
+            >HOME</a
+          >
+          <a
+            class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out"
+            href="#"
+            >PORTFOLIO</a
+          >
+          <a
+            class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out"
+            href="#"
+            >ABOUT US</a
+          >
+          <a
+            class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out"
+            href="#"
+            >SERVICE</a
+          >
         </div>
+        <div class="hidden md:flex items-center">
+          <button
+            class="font-bold font-Poppins bg-green rounded-xl px-4 py-3 text-sm text-dark outline-none border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out"
+          >
+            LET'S TALK
+          </button>
+        </div>
+
+        <!--------------- HAMBURGER BUTTON ------------------->
+
+        <div class="flex items-center justify-center mr-2 z-10 md:hidden">
+          <i
+            class="ri-menu-4-line text-2xl font-semibold cursor-pointer text-white"
+            id="hamburger"
+            onclick="toggleMenu()"
+          ></i>
+          <i
+            class="hidden ri-close-line text-2xl font-semibold text-white cursor-pointer"
+            id="close-btn"
+            onclick="toggleMenu()"
+          ></i>
+        </div>
+      </nav>
+
+      <!--------------- NAVBAR MOBILE VIEW ------------------->
+
+      <div class="md:hidden">
+        <div
+          class="absolute right-[-100%] top-0 h-screen w-2/3 bg-dark transition-all ease-in duration-500"
+          id="mobile-menu"
+        >
+          <div class="flex flex-col items-center gap-6 p-8">
+            <div class="w-[70px] flex items-center justify-center">
+              <img
+                class="ml-2 mt-8 cursor-pointer p-1"
+                src="./assets/img/logo.png"
+              />
+            </div>
+
+            <div class="flex flex-col items-center gap-8 mt-5">
+              <a
+                class="font-semibold text-sm cursor-pointer text-white hover:text-green transition duration-300 ease-in-out"
+                href="#"
+                >HOME</a
+              >
+              <a
+                class="font-medium text-sm cursor-pointer text-white hover:text-green transition duration-300 ease-in-out"
+                href="#"
+                >PORTFOLIO</a
+              >
+              <a
+                class="font-medium text-sm cursor-pointer text-white hover:text-green transition duration-300 ease-in-out"
+                href="#"
+                >ABOUT US</a
+              >
+              <a
+                class="font-medium text-sm cursor-pointer text-white hover:text-green transition duration-300 ease-in-out"
+                href="#"
+                >SERVICE</a
+              >
+
+              <button
+                class="font-bold bg-green rounded-lg px-4 py-3 text-sm text-dark outline-none border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out"
+              >
+                LET'S TALK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!------------------ HERO SECTION -------------------->
 
-    <section class="w-full h-[100dvh] bg-cover bg-no-repeat bg-center flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(./assets/img/home-bg.jpg)">
-        
-        <div class="container w-[80%] md:w-2/3 h-3/5 p-4 flex justify-center  flex-col mt-[8%]">
-            <h1 class="text-4xl md:text-6xl text-white font-bold font-Poppins line-height-1.5 animate__animated animate__fadeInUp animate__slow flex">Capture <br> The Moments <br> Where Every Frame</h1>
-            <h1 class="text-4xl md:text-6xl text-green font-bold font-Poppins line-height-1.5 animate__animated animate__fadeInUp">  <span class=" auto-type animate__animated animate__fadeInUp animate__slow"></span></h1>
-            <p class="text-xs md:text-sm text-white font-Poppins line-height-1.5 mt-3 w-[80%] md:w-[50%] animate__animated animate__fadeInUp  animate__slow animate__delay-1s">We specializes in expert photography and videography, capturing your essence with a blend of skill and creativity.</p>
-            <button class="font-bold bg-green rounded-xl px-3 py-3 text-base text-dark outline-none  mt-10 w-[8.5rem] border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out">Our Services</button>
-        </div>
+    <section
+      class="w-full h-[100dvh] bg-cover bg-no-repeat bg-center flex items-center justify-center"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(./assets/img/home-bg.jpg);
+      "
+    >
+      <div
+        class="container w-[80%] md:w-2/3 h-3/5 p-4 flex justify-center flex-col mt-[8%]"
+      >
+        <h1
+          class="text-4xl md:text-6xl text-white font-bold font-Poppins line-height-1.5 animate__animated animate__fadeInUp animate__slow flex"
+        >
+          Capture <br />
+          The Moments <br />
+          Where Every Frame
+        </h1>
+        <h1
+          class="text-4xl md:text-6xl text-green font-bold font-Poppins line-height-1.5 animate__animated animate__fadeInUp"
+        >
+          <span
+            class="auto-type animate__animated animate__fadeInUp animate__slow"
+          ></span>
+        </h1>
+        <p
+          class="text-xs md:text-sm text-white font-Poppins line-height-1.5 mt-3 w-[80%] md:w-[50%] animate__animated animate__fadeInUp animate__slow animate__delay-1s"
+        >
+          We specializes in expert photography and videography, capturing your
+          essence with a blend of skill and creativity.
+        </p>
+        <button
+          class="font-bold bg-green rounded-xl px-3 py-3 text-base text-dark outline-none mt-10 w-[8.5rem] border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out"
+        >
+          Our Services
+        </button>
+      </div>
     </section>
 
     <!------------------ SERVICES -------------------->
 
     <section class="w-full bg-dark flex items-center flex-col">
-        <div class="container mx-auto md:mx-16 mt-10 flex flex-col items-center justify-center gap-4">
-            <h1 class="text-3xl md:text-5xl font-semibold cursor-pointer text-white font-Poppins wow animate__animated animate__fadeInUp animate__slow">This is What <span class="text-green">We Do <img class="inline w-6 md:w-9 mb-14" src="./assets/img/serve-design.png"> </span></h1>
-            <p class="text-base text-lightText font-Poppins line-height-1.5 text-center w-[80%] md:w-[40%] wow animate__animated animate__fadeInUp animate__slow">
-                Our photography and videography services seamlessly blend professional expertise with creative flair.
+      <div
+        class="container mx-auto md:mx-16 mt-10 flex flex-col items-center justify-center gap-4"
+      >
+        <h1
+          class="text-3xl md:text-5xl font-semibold cursor-pointer text-white font-Poppins wow animate__animated animate__fadeInUp animate__slow"
+        >
+          This is What
+          <span class="text-green"
+            >We Do
+            <img
+              class="inline w-6 md:w-9 mb-14"
+              src="./assets/img/serve-design.png"
+            />
+          </span>
+        </h1>
+        <p
+          class="text-base text-lightText font-Poppins line-height-1.5 text-center w-[80%] md:w-[40%] wow animate__animated animate__fadeInUp animate__slow"
+        >
+          Our photography and videography services seamlessly blend professional
+          expertise with creative flair.
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center mb-10">
+        <div
+          class="container mx-5 md:mx-16 mt-10 w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center"
+        >
+          <div
+            class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp animate__slow group"
+          >
+            <img
+              class="w-12 bg-white p-2 rounded-md group-hover:bg-green"
+              src="./assets/img/ph-6.svg"
+            />
+            <h3 class="font-semibold text-2xl text-white">
+              Portrait Photography
+            </h3>
+            <p class="text-base text-lightText font-normal">
+              Photography of a person displaying the expression, personality,
+              and mood.
             </p>
+          </div>
+
+          <div
+            class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp animate__slow"
+          >
+            <img
+              class="w-12 bg-white p-2 rounded-md group-hover:bg-green"
+              src="./assets/img/ph-5.svg"
+            />
+            <h3 class="font-semibold text-2xl text-white">
+              Wedding Photography
+            </h3>
+            <p class="text-base text-lightText font-normal">
+              Great way to remember the experience of joyful moments.
+            </p>
+          </div>
+
+          <div
+            class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp animate__slow"
+          >
+            <img
+              class="w-12 bg-white p-2 rounded-md group-hover:bg-green"
+              src="./assets/img/ph-1.svg"
+            />
+            <h3 class="font-semibold text-2xl text-white">Videography</h3>
+            <p class="text-base text-lightText font-normal">
+              Dive into a world of cinematic storytelling with our videography
+              services
+            </p>
+          </div>
+
+          <div
+            class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp animate__slow"
+          >
+            <img
+              class="w-12 bg-white p-2 rounded-md group-hover:bg-green"
+              src="./assets/img/ph-2.svg"
+            />
+            <h3 class="font-semibold text-2xl text-white">Video Editing</h3>
+            <p class="text-base text-lightText font-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+              mollitia?
+            </p>
+          </div>
+
+          <div
+            class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp animate__slow"
+          >
+            <img
+              class="w-12 bg-white p-2 rounded-md group-hover:bg-green"
+              src="./assets/img/ph-4.svg"
+            />
+            <h3 class="font-semibold text-2xl text-white">Catalog Shoot</h3>
+            <p class="text-base text-lightText font-normal">
+              In commercial photography the emphasis of the whole shoot is on
+              the product.
+            </p>
+          </div>
+
+          <div
+            class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp animate__slow"
+          >
+            <img
+              class="w-10 sm:w-12 bg-white p-2 rounded-md group-hover:bg-green"
+              src="./assets/img/ph-3.svg"
+            />
+            <h3 class="font-semibold text-2xl text-white">Business Shoot</h3>
+            <p class="text-base text-lightText font-normal">
+              Elevate your professional image with our tailored business shoot
+              services
+            </p>
+          </div>
         </div>
-            
-        <div class="flex items-center justify-center mb-10">
-            <div class="container mx-5 md:mx-16 mt-10 w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
-
-                <div class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp animate__slow group">
-                    <img class="w-12 bg-white p-2 rounded-md group-hover:bg-green" src="./assets/img/ph-6.svg">
-                    <h3 class="font-semibold text-2xl text-white">Portrait Photography</h3>
-                    <p class="text-base text-lightText font-normal">Photography of a person displaying the expression, personality, and mood.</p>
-                </div>
-
-                <div class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp animate__slow">
-                    <img class="w-12 bg-white p-2 rounded-md group-hover:bg-green" src="./assets/img/ph-5.svg">
-                    <h3 class="font-semibold text-2xl text-white">Wedding Photography</h3>
-                    <p class="text-base text-lightText font-normal">Great way to remember the experience of joyful moments.</p>
-                </div>
-
-                <div class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp animate__slow">
-                    <img class="w-12 bg-white p-2 rounded-md group-hover:bg-green" src="./assets/img/ph-1.svg">
-                    <h3 class="font-semibold text-2xl text-white">Videography</h3>
-                    <p class="text-base text-lightText font-normal">Dive into a world of cinematic storytelling with our videography services</p>
-                </div>
-
-                <div class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp animate__slow">
-                    <img class="w-12 bg-white p-2 rounded-md group-hover:bg-green" src="./assets/img/ph-2.svg">
-                    <h3 class="font-semibold text-2xl text-white">Video Editing</h3>
-                    <p class="text-base text-lightText font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, mollitia?</p>
-                </div>
-
-                <div class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp animate__slow">
-                    <img class="w-12 bg-white p-2 rounded-md group-hover:bg-green" src="./assets/img/ph-4.svg">
-                    <h3 class="font-semibold text-2xl text-white">Catalog Shoot</h3>
-                    <p class="text-base text-lightText font-normal">In commercial photography the emphasis of the whole shoot is on the product.</p>
-                </div>
-
-                <div class="bg-custom-gradient h-[20rem] flex flex-col gap-3 items-center p-10 rounded-[30px] justify-center font-Poppins cursor-pointer group hover:rounded-[30px] hover:border border-green wow animate__animated animate__fadeInUp animate__slow">
-                    <img class="w-10 sm:w-12 bg-white p-2 rounded-md group-hover:bg-green" src="./assets/img/ph-3.svg">
-                    <h3 class="font-semibold text-2xl text-white">Business Shoot</h3>
-                       <p class="text-base text-lightText font-normal">Elevate your professional image with our tailored business shoot services</p>
-                </div>
-
-            </div>
-        </div>
- 
+      </div>
     </section>
 
     <!------------------ PORTFOLIO -------------------->
 
-    <section class="w-full bg-lightText flex items-center flex-col">
+    <section class="w-full bg-white flex items-center flex-col">
+      <h1
+        class="mt-10 text-center text-4xl md:text-5xl font-semibold cursor-pointer text-dark font-Poppins wow animate__animated animate__fadeInUp animate__slow"
+      >
+        OUR PORTFOLIO<img
+          class="inline w-6 md:w-9 mb-14"
+          src="./assets/img/serve-design-dark.png"
+        />
+      </h1>
 
-        <h1 class="mt-10 text-center text-4xl md:text-5xl font-semibold cursor-pointer text-dark font-Poppins wow animate__animated animate__fadeInUp animate__slow">OUR PORTFOLIO<img class="inline w-6 md:w-9 mb-14" src="./assets/img/serve-design-dark.png"></h1>            
-        
-    
-        <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center">
+        <div
+          class="container mx-auto md:mx-16 my-10 w-full grid-cols-1 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center"
+        >
+          <img
+            class="object-cover w-[90%] sm:w-full h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+            src="./assets/img/portfolio-1.jpg"
+          />
 
-            <div class="container mx-auto md:mx-16 my-10 w-full grid-cols-1 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
-            
-                <img class="object-cover w-[90%] sm:w-full h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/portfolio-1.jpg">
-    
-                <img class="object-cover w-[90%] sm:w-full h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/portfolio-2.jpg">
-    
-                <img class="object-cover w-[90%] sm:w-full h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/portfolio-3.jpg">
-    
-                <img class="object-cover w-[90%] sm:w-full h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/portfolio-4.jpg">
-    
-                <img class="object-cover w-[90%] sm:w-full h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/portfolio-5.jpg">
-    
-                <img class="object-cover w-[90%] sm:w-full h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/portfolio-6.jpg">
-    
-            </div>
+          <img
+            class="object-cover w-[90%] sm:w-full h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+            src="./assets/img/portfolio-2.jpg"
+          />
+
+          <img
+            class="object-cover w-[90%] sm:w-full h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+            src="./assets/img/portfolio-3.jpg"
+          />
+
+          <img
+            class="object-cover w-[90%] sm:w-full h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+            src="./assets/img/portfolio-4.jpg"
+          />
+
+          <img
+            class="object-cover w-[90%] sm:w-full h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+            src="./assets/img/portfolio-5.jpg"
+          />
+
+          <img
+            class="object-cover w-[90%] sm:w-full h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+            src="./assets/img/portfolio-6.jpg"
+          />
         </div>
+      </div>
     </section>
 
     <!------------------ ABOUT US -------------------->
 
     <section class="w-full bg-dark flex flex-col items-center">
+      <h1
+        class="mt-10 text-center text-bgCol text-4xl md:text-5xl font-semibold cursor-pointer font-Poppins wow animate__animated animate__fadeInUp animate__slow"
+      >
+        ABOUT
+        <span class="text-green">
+          US<img
+            class="inline w-6 md:w-9 mb-14"
+            src="./assets/img/serve-design.png"
+        /></span>
+      </h1>
 
-    <h1 class="mt-10 text-center text-bgCol text-4xl md:text-5xl font-semibold cursor-pointer font-Poppins wow animate__animated animate__fadeInUp animate__slow">ABOUT <span class="text-green"> US<img class="inline w-6 md:w-9 mb-14" src="./assets/img/serve-design.png"></span></h1>  
+      <div class="flex items-center justify-center mb-20">
+        <div
+          class="flex justify-around items-center flex-col md:flex-row container mx-auto md:mx-16 mt-10"
+        >
+          <div class="w-[90%] md:w-[40%] relative">
+            <img
+              class="object-cover relative rounded-sm sm:w-full z-20 transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+              src="./assets/img/about.jpg"
+            />
+            <div
+              class="bg-green absolute rounded-sm bottom-[-10px] left-[-10px] w-full h-full z-10"
+            ></div>
+          </div>
 
-    <div class="flex items-center justify-center mb-20">
-        <div class="flex justify-around items-center flex-col md:flex-row container mx-auto md:mx-16 mt-10">
-            <div class="w-[90%] md:w-[40%] relative">
-                <img class="object-cover relative rounded-sm sm:w-full z-20 transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/about.jpg">
-                <div class="bg-green absolute rounded-sm bottom-[-10px] left-[-10px] w-full h-full z-10"></div>
-            </div>
-    
-            <div class="flex flex-col justify-center items-center p-5 w-[90%] md:w-[40%]">
-                <h4 class="font-semibold text-2xl md:text-3xl text-bgCol mt-10 sm:mt-0 font-Poppins">The Creative Minds Behind The Photos</h4>
-                <p class="text-base mt-5 text-lightText font-Poppins">Welcome to <span class="text-green">Debika Production House,</span> where every photograph is a chapter in our lifelong love affair with the art of capturing moments. Our story is one of passion and curiosity, where we've embarked on countless journeys to explore the beauty of the world through the lens. In this section, meet the individuals behind the camera, discover the inspirations that fuel our creativity, and gain insight into the experiences that have shaped us as photographers.</p>
-            </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 w-[90%] md:w-[40%]"
+          >
+            <h4
+              class="font-semibold text-2xl md:text-3xl text-bgCol mt-10 sm:mt-0 font-Poppins"
+            >
+              The Creative Minds Behind The Photos
+            </h4>
+            <p class="text-sm mt-5 text-lightText font-Poppins">
+              Welcome to
+              <span class="text-green">Debika Production House,</span> where
+              every photograph is a chapter in our lifelong love affair with the
+              art of capturing moments. Our story is one of passion and
+              curiosity, where we've embarked on countless journeys to explore
+              the beauty of the world through the lens. In this section, meet
+              the individuals behind the camera, discover the inspirations that
+              fuel our creativity, and gain insight into the experiences that
+              have shaped us as photographers.
+            </p>
+          </div>
         </div>
-    </div>
-
-    </section>    
+      </div>
+    </section>
 
     <!------------------ OUR TEAM -------------------->
 
-    <section class="w-full bg-lightText flex items-center flex-col">
+    <section class="w-full bg-white flex items-center flex-col">
+      <h1
+        class="mt-10 text-center text-4xl md:text-5xl font-semibold cursor-pointer text-dark font-Poppins wow animate__animated animate__fadeInUp animate__slow"
+      >
+        MEET THE TEAM<img
+          class="inline w-6 md:w-9 mb-14"
+          src="./assets/img/serve-design-dark.png"
+        />
+      </h1>
 
-        <h1 class="mt-10 text-center text-4xl md:text-5xl font-semibold cursor-pointer text-dark font-Poppins wow animate__animated animate__fadeInUp animate__slow">MEET THE TEAM<img class="inline w-6 md:w-9 mb-14" src="./assets/img/serve-design-dark.png"></h1>
+      <div class="flex items-center justify-center">
+        <div
+          class="container mx-auto md:mx-16 my-10 w-[90%] sm:w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center"
+        >
+          <div class="">
+            <img
+              class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+              src="./assets/img/user-01.jpg"
+            />
 
-        <div class="flex items-center justify-center">
+            <h1 class="text-lg text-dark text-center md:text-xl font-semibold pt-2">
+              Alex Thompson
+            </h1>
+          </div>
 
-            <div class="container mx-auto md:mx-16 my-10 w-[90%] sm:w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center">
-            
-                <div class="">
-                    <img class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/user-01.jpg">
+          <div class="">
+            <img
+              class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+              src="./assets/img/user-02.jpg"
+            />
 
-                    <h1 class="text-lg text-center md:text-xl font-semibold pt-2">Alex Thompson</h1>
-                </div>
-    
-                <div class="">
-                    <img class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/user-02.jpg">
+            <h1 class="text-lg text-dark text-center md:text-xl font-semibold pt-2">
+              Ryan Mitchell
+            </h1>
+          </div>
 
-                    <h1 class="text-lg text-center md:text-xl font-semibold pt-2">Ryan Mitchell</h1>
-                </div>
-    
-                <div class="">
-                    <img class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/user-03.jpg">
+          <div class="">
+            <img
+              class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+              src="./assets/img/user-03.jpg"
+            />
 
-                    <h1 class="text-lg text-center md:text-xl font-semibold pt-2">Ethan Davis</h1>
-                </div>
-    
-                <div class="">
-                    <img class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/user-04.jpg">
+            <h1 class="text-lg text-dark text-center md:text-xl font-semibold pt-2">
+              Ethan Davis
+            </h1>
+          </div>
 
-                    <h1 class="text-lg text-center md:text-xl font-semibold pt-2">Luke Anderson</h1>
-                </div>
-    
-                <div class="">
-                    <img class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/user-05.jpg">
+          <div class="">
+            <img
+              class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+              src="./assets/img/user-04.jpg"
+            />
 
-                    <h1 class="text-lg text-center md:text-xl font-medium pt-2">Marcus Turner</h1>
-                </div>
-    
-                <div class="">
-                    <img class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/user-06.jpg">
+            <h1 class="text-lg text-dark text-center md:text-xl font-semibold pt-2">
+              Luke Anderson
+            </h1>
+          </div>
 
-                    <h1 class="text-lg text-center md:text-xl font-semibold pt-2">Jordan Harris</h1>
-                </div>
+          <div class="">
+            <img
+              class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+              src="./assets/img/user-05.jpg"
+            />
 
-                <div class="">
-                    <img class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/user-07.jpg">
+            <h1 class="text-lg text-dark text-center md:text-xl font-medium pt-2">
+              Marcus Turner
+            </h1>
+          </div>
 
-                    <h1 class="text-lg text-center md:text-xl font-semibold pt-2">Mason Carter</h1>
-                </div>
+          <div class="">
+            <img
+              class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+              src="./assets/img/user-06.jpg"
+            />
 
-                <div class="">
-                    <img class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/user-08.jpg">
+            <h1 class="text-lg text-dark text-center md:text-xl font-semibold pt-2">
+              Jordan Harris
+            </h1>
+          </div>
 
-                    <h1 class="text-lg text-center md:text-xl font-semibold pt-2">Gabriel Rivera</h1>
-                </div>
-    
-            </div>
+          <div class="">
+            <img
+              class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+              src="./assets/img/user-07.jpg"
+            />
+
+            <h1 class="text-lg text-dark text-center md:text-xl font-semibold pt-2">
+              Mason Carter
+            </h1>
+          </div>
+
+          <div class="">
+            <img
+              class="object-cover h-[25rem] rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+              src="./assets/img/user-08.jpg"
+            />
+
+            <h1 class="text-lg text-dark text-center md:text-xl font-semibold pt-2">
+              Gabriel Rivera
+            </h1>
+          </div>
         </div>
+      </div>
     </section>
 
     <!------------------ CONTACT US -------------------->
 
     <section class="w-full bg-dark flex flex-col items-center">
+      <h1
+        class="mt-10 text-center text-bgCol text-4xl md:text-5xl font-semibold cursor-pointer font-Poppins wow animate__animated animate__fadeInUp animate__slow"
+      >
+        CONTACT
+        <span class="text-green">
+          US<img
+            class="inline w-6 md:w-9 mb-14"
+            src="./assets/img/serve-design.png"
+        /></span>
+      </h1>
 
-        <h1 class="mt-10 text-center text-bgCol text-4xl md:text-5xl font-semibold cursor-pointer font-Poppins wow animate__animated animate__fadeInUp animate__slow">CONTACT <span class="text-green"> US<img class="inline w-6 md:w-9 mb-14" src="./assets/img/serve-design.png"></span></h1>  
-    
-        <div class="flex items-center justify-center mb-20">
-            <div class="flex justify-between items-center flex-col md:flex-row container mx-auto md:mx-16 mt-10">
-                <div class="w-[90%] md:w-[50%] relative">
-                    <img class="object-cover relative rounded-sm sm:w-full z-20 transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer" src="./assets/img/contact-bg.jpg">
-                    <div class="bg-green absolute rounded-sm bottom-[-10px] left-[-10px] w-full h-full z-10"></div>
-                </div>
-        
-                <div class="flex flex-col justify-start mt-10 md:mt-0 w-[90%] md:w-[40%] ">
-                    
-                    <div class="flex flex-col shadow-lg p-5 rounded-md gap-8 bg-custom-gradient justify-center">
-                        <div class="flex gap-5 text-white items-center">
-                            <i class="ri-map-pin-2-line w-5 h-5 text-xl"></i>
-                            <div class="gap-2">
-                                <h1 class="text-base font-Poppins">Our Address</h1>
-                                <p class="text-sm font-Poppins text-lightText">Drive Chicago, IL 60453</p>
-                            </div>
-                        </div>
+      <div class="flex items-center justify-center mb-20">
+        <div
+          class="flex justify-between items-center flex-col md:flex-row container mx-auto md:mx-16 mt-10"
+        >
+          <div class="w-[90%] md:w-[50%] relative">
+            <img
+              class="object-cover relative rounded-sm sm:w-full z-20 transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+              src="./assets/img/contact-bg.jpg"
+            />
+            <div
+              class="bg-green absolute rounded-sm bottom-[-10px] left-[-10px] w-full h-full z-10"
+            ></div>
+          </div>
 
-                        <div class="border-b"></div>
+          <div
+            class="flex flex-col justify-start items-center mt-10 md:mt-0 w-[90%] md:w-[40%]"
+          >
+            <p
+              class="font-semibold text-2xl md:text-3xl text-white font-Poppins"
+            >
+              Drop us a message or say hello. We'd love to hear from you!
+            </p>
 
-                        <div class="flex gap-5 text-white items-center">
-                            <i class="ri-phone-fill text-xl"></i>
-                            <div class="gap-2">
-                                <h1 class="text-base font-Poppins">Call Us</h1>
-                                <p class="text-sm font-Poppins text-lightText">+369-975-1452</p>
-                            </div>
-                        </div>
+            <form class="flex flex-col gap-3 w-full mt-10" id="form">
+              <input
+                class="bg-transparent border-b border-white p-2 rounded-sm text-white"
+                type="text"
+                placeholder="Your Name"
+                id="name"
+                required
+              />
+              <input
+                class="bg-transparent border-b border-white p-2 rounded-sm text-white"
+                type="email"
+                placeholder="Your Email"
+                id="email"
+                required
+              />
+              <input
+                class="bg-transparent border-b border-white p-2 rounded-sm text-white"
+                type="text"
+                placeholder="Your Message"
+                id="message"
+                required
+              />
 
-                        <div class="border-b"></div>
-
-                        <div class="flex gap-5 text-white items-center">
-                            <i class="ri-mail-line text-xl"></i>
-                            <div class="gap-2">
-                                <h1 class="text-base font-Poppins">Our Mail</h1>
-                                <p class="text-sm font-Poppins text-lightText">myname@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <!-- <h4 class="font-semibold text-2xl md:text-3xl text-bgCol font-Poppins text-center">Social Media</h4> -->
-                        <p class="font-normal mt-5 text-base md:text-lg text-lightText font-Poppins">
-                        Connect with us on social media! Drop us a message or say hello. We'd love to hear from you!
-                        </p>
-                    </div>
-                    
-                    <div class="flex gap-4 mt-5">
-                        <a class="" href="https://youtube.com" target="_blank">
-                            <img class="w-10 h-10" src="./assets/img/facebook.png">
-                        </a>
-                        
-                        <a class="" href="https://instagram.com" target="_blank">
-                            <img class="w-10 h-10" src="./assets/img/instagram.png">
-                        </a>
-
-                        <a class="" href="https://facebook.com" target="_blank">
-                            <img class="w-10 h-10" src="./assets/img/youtube.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
+              <button
+                class="mt-5 font-bold font-Poppins bg-green rounded-lg px-4 py-3 w-28 text-sm text-dark outline-none border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out"
+                type="submit"
+                id="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
-    
-    </section> 
+      </div>
+    </section>
 
     <!------------------ FOOTER -------------------->
 
+    <footer class="w-full">
+        <section class="w-full bg-footer flex items-center font-Poppins text-white">
+            <div class="container mx-auto md:mx-16 my-24 flex gap-6 flex-col sm:flex-row justify-between items-center sm:items-baseline">
+                <div class="w-[90%] sm:w-1/3 flex flex-col gap-3">
+                    <img class="w-[90px]" src="./assets/img/logo.png">
     
+                    <p class="text-white text-sm w-[80%] leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ducimus voluptates illo repellendus saepe minima modi, molestiae et excepturi dicta.</p>
+    
+                    <div class="flex gap-3 mt-5">
+                            
+                        <a class="text-dark text-center bg-green hover:bg-dark p-3 rounded-full hover:text-white transition duration-300 ease-in-out" href="" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-5 w-5">
+                                    <path fill="currentColor"
+                                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                                    </path>
+                            </svg>
+                        </a>
+    
+                        <a class="text-dark text-center bg-green hover:bg-dark p-3 rounded-full hover:text-white transition duration-300 ease-in-out" href="" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="h-5 w-5">
+                                    <path fill="currentColor"
+                                        d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                    </path>
+                            </svg>
+                        </a>
+    
+                        <a class="text-dark text-center bg-green hover:bg-dark p-3 rounded-full hover:text-white transition duration-300 ease-in-out" href="" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-5 w-5">
+                                    <path fill="currentColor"
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                    </path>
+                            </svg>
+                        </a>
+                        
+                    </div>
+                </div>
+    
+                <div class="w-[90%] sm:w-1/3 flex flex-col gap-4">
+                    <h3 class="text-2xl font-medium">Quick Links</h3>
+    
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="text-base font-normal text-white hover:text-green transition duration-300 ease-in-out" href="about.html">About Us</a></li>
+                        <li><a class="text-base font-normal text-white hover:text-green transition duration-300 ease-in-out" href="portfolio.html">Our Portfolio</a></li>
+                        <li><a class="text-base font-normal text-white hover:text-green transition duration-300 ease-in-out" href="contact.html">Contact Us</a></li>
+                        <li><a class="text-base font-normal text-white hover:text-green transition duration-300 ease-in-out" href="services.html">Services</a></li>
+                    </ul>
+                </div>
+    
+                <div class="w-[90%] sm:w-1/3 flex flex-col gap-4">
+                    <h3 class="text-2xl font-medium">Contact Information</h3>
+                    <div class="flex gap-5 text-white items-center">
+                        <i class="ri-map-pin-2-line w-5 h-5 text-xl"></i>
+                        <div class="gap-2">
+                            <h1 class="text-base font-Poppins">Our Address</h1>
+                            <p class="text-sm font-Poppins text-lightText">Drive Chicago, IL 60453</p>
+                        </div>
+                    </div>
+    
+                    <div class="border-b"></div>
+    
+                    <div class="flex gap-5 text-white items-center">
+                        <i class="ri-phone-fill text-xl"></i>
+                        <div class="gap-2">
+                            <h1 class="text-base font-Poppins">Call Us</h1>
+                            <p class="text-sm font-Poppins text-lightText">+369-975-1452</p>
+                        </div>
+                    </div>
+    
+                    <div class="border-b"></div>
+    
+                    <div class="flex gap-5 text-white items-center">
+                        <i class="ri-mail-line text-xl"></i>
+                        <div class="gap-2">
+                            <h1 class="text-base font-Poppins">Our Mail</h1>
+                            <p class="text-sm font-Poppins text-lightText">myname@gmail.com</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-copyrightBg text-white flex items-center justify-center">
+            <p class="text-[13px] sm:text-base font-medium p-7"><i class="ri-copyright-line font-Poppins"></i> 2024 Debika Production House - All Rights Reserved.</p>
+        </section>
+    </footer>
 
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- <script src="wow.min.js"></script> -->
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
