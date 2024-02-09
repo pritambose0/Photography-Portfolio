@@ -38,3 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 // <!------------------ FORM SUBMISSION -------------------->
+
+
+// <!------------------ SCROLL ANIMATION -------------------->
+function scrollToSection(sectionId){
+  const section = document.getElementById(sectionId);
+  section.scrollIntoView({behavior:'smooth'})
+}
