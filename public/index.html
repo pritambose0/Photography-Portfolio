@@ -21,7 +21,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
       crossorigin=""
     />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!--------------------- NAVBAR -------------------------->
@@ -45,6 +45,11 @@
           >
           <a
             class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out"
+            href="#services"
+            >SERVICE</a
+          >
+          <a
+            class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out"
             href="#portfolio"
             >PORTFOLIO</a
           >
@@ -53,11 +58,7 @@
             href="#about"
             >ABOUT US</a
           >
-          <a
-            class="font-Poppins font-medium text-base cursor-pointer px-3 text-white hover:text-green transition duration-300 ease-in-out"
-            href="#services"
-            >SERVICE</a
-          >
+          
         </div>
         <div class="hidden md:flex items-center">
           <a
@@ -150,21 +151,23 @@
         class="container w-[80%] md:w-2/3 h-3/5 p-4 flex justify-center flex-col mt-[8%]"
       >
         <h1
-          class="text-4xl md:text-6xl text-white font-bold font-Poppins line-height-1.5 animate__animated animate__fadeInUp animate__slow flex"
+          class="text-4xl md:text-6xl text-white font-bold font-Poppins line-height-1.5  flex"
+          data-aos="fade-up"
         >
           Capture <br />
           The Moments <br />
           Where Every Frame
         </h1>
         <h1
-          class="text-4xl md:text-6xl text-green font-bold font-Poppins line-height-1.5 animate__animated animate__fadeInUp"
+          class="text-4xl md:text-6xl text-green font-bold font-Poppins line-height-1.5 "
         >
           <span
-            class="auto-type animate__animated animate__fadeInUp animate__slow"
+            class="auto-type"
           ></span>
         </h1>
         <p
-          class="text-xs md:text-sm text-white font-Poppins line-height-1.5 mt-3 w-[80%] md:w-[50%] animate__animated animate__fadeInUp animate__slow animate__delay-1s"
+          class="text-xs md:text-sm text-white font-Poppins line-height-1.5 mt-3 w-[80%] md:w-[50%] "
+          
         >
           We specializes in expert photography and videography, capturing your
           essence with a blend of skill and creativity.
@@ -316,7 +319,17 @@
         >
           <img
             class="w-[90%] sm:w-full rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer object-cover"
+            src="./assets/img/portfolio-1.jpg"
+          />
+
+          <img
+            class="object-cover w-[90%] sm:w-full rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
             src="./assets/img/portfolio-2.jpg"
+          />
+
+          <img
+            class="object-cover w-[90%] sm:w-full rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+            src="./assets/img/portfolio-3.jpg"
           />
 
           <img
@@ -331,18 +344,9 @@
 
           <img
             class="object-cover w-[90%] sm:w-full rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
-            src="./assets/img/portfolio-7.jpg"
+            src="./assets/img/portfolio-6.jpg"
           />
-
-          <img
-            class="object-cover w-[90%] sm:w-full rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
-            src="./assets/img/portfolio-8.jpg"
-          />
-
-          <img
-            class="object-cover w-[90%] sm:w-full rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
-            src="./assets/img/portfolio-11.png"
-          />
+          
         </div>
       </div>
       <a
@@ -402,13 +406,12 @@
               have shaped us as photographers.
             </p>
 
-            <a
-              href="https://wa.me/+918910414494"
-              target="_blank"
+            <button
               class="mt-5 font-semibold font-Poppins bg-green rounded-lg px-3 py-3 w-28 text-sm text-center text-dark outline-none border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out"
+              onclick="scrollToSection('contact')"
             >
-              Whatsapp
-            </a>
+              Contact
+            </button>
           </div>
         </div>
       </div>
@@ -418,7 +421,7 @@
 
     <section class="w-full bg-white flex items-center flex-col">
       <h1
-        class="mt-10 text-center text-4xl md:text-5xl font-semibold cursor-pointer text-dark font-Poppins wow animate__animated animate__fadeInUp animate__slow"
+        class="mt-10 text-center text-4xl md:text-5xl font-semibold cursor-pointer text-dark font-Poppins wow"
       >
         MEET THE TEAM<img
           class="inline w-6 md:w-9 mb-14"
@@ -428,83 +431,47 @@
 
       <div class="flex items-center justify-center">
         <div
-          class="container mx-auto md:mx-16 my-10 w-[90%] sm:w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center"
+          class="container mx-auto md:mx-16 my-10 w-[90%] sm:w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center"
         >
           <div class="overflow-hidden">
             <img
-              class="object-cover h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
-              src="./assets/img/user-01.jpg"
+              class="object-cover rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+              src="./assets/img/tm-1.jpg"
+              alt="Team Member 1"
             />
 
             <h1
-              class="text-lg text-dark text-center md:text-xl font-semibold pt-2"
+              class="text-xl text-dark text-center md:text-xl font-bold pt-2"
             >
-              Alex Thompson
+              Saikat Dutta
             </h1>
           </div>
 
           <div class="overflow-hidden">
             <img
-              class="object-cover h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
-              src="./assets/img/user-02.jpg"
+              class="object-cover rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+              src="./assets/img/tm-2.jpg"
+              alt="Team Member 2"
             />
 
             <h1
-              class="text-lg text-dark text-center md:text-xl font-semibold pt-2"
+              class="text-xl text-dark text-center md:text-xl font-bold pt-2"
             >
-              Ryan Mitchell
+              Sourav Dutta
             </h1>
           </div>
 
           <div class="overflow-hidden">
             <img
-              class="object-cover h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
-              src="./assets/img/user-03.jpg"
+              class="object-cover rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
+              src="./assets/img/tm-3.jpg"
+              alt="Team Member 3"
             />
 
             <h1
-              class="text-lg text-dark text-center md:text-xl font-semibold pt-2"
+              class="text-xl text-dark text-center md:text-xl font-bold pt-2"
             >
-              Ethan Davis
-            </h1>
-          </div>
-
-          <div class="overflow-hidden">
-            <img
-              class="object-cover h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
-              src="./assets/img/user-04.jpg"
-            />
-
-            <h1
-              class="text-lg text-dark text-center md:text-xl font-semibold pt-2"
-            >
-              Luke Anderson
-            </h1>
-          </div>
-
-          <div class="overflow-hidden">
-            <img
-              class="object-cover h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
-              src="./assets/img/user-05.jpg"
-            />
-
-            <h1
-              class="text-lg text-dark text-center md:text-xl font-medium pt-2"
-            >
-              Marcus Turner
-            </h1>
-          </div>
-
-          <div class="overflow-hidden">
-            <img
-              class="object-cover h-auto rounded-md transition-transform duration-500 scale-100 hover:scale-105 cursor-pointer"
-              src="./assets/img/user-06.jpg"
-            />
-
-            <h1
-              class="text-lg text-dark text-center md:text-xl font-semibold pt-2"
-            >
-              Jordan Harris
+              Souvik Dutta
             </h1>
           </div>
         </div>
@@ -540,45 +507,92 @@
           </div>
 
           <div
-            class="flex flex-col justify-start items-center mt-10 md:mt-0 w-[90%] md:w-[40%]"
+            class="flex flex-col justify-start mt-10 md:mt-0 w-[90%] md:w-[40%]"
           >
             <p
-              class="font-semibold text-2xl md:text-3xl text-white font-Poppins"
+              class="font-semibold text-2xl text-center md:text-3xl text-white font-Poppins"
             >
-              Drop us a message or say hello. We'd love to hear from you!
+              Get In Touch
             </p>
 
-            <form class="flex flex-col gap-3 w-full mt-10" id="form">
-              <input
-                class="bg-transparent border-b border-white p-2 rounded-sm text-white"
-                type="text"
-                placeholder="Your Name"
-                id="name"
-                required
-              />
-              <input
-                class="bg-transparent border-b border-white p-2 rounded-sm text-white"
-                type="email"
-                placeholder="Your Email"
-                id="email"
-                required
-              />
-              <input
-                class="bg-transparent border-b border-white p-2 rounded-sm text-white"
-                type="text"
-                placeholder="Your Message"
-                id="message"
-                required
-              />
+            <div class="flex flex-col mt-5 gap-5">
+              <div class="flex flex-col gap-2">
+                <p class="font-Poppins text-lightText text-md">We're always ready to listen and address your queries, concerns, or feedback. Reach out to us through any of the channels listed below, and we'll get back to you as soon as possible.</p>
+                <p class="text-2xl text-white font-semibold mt-2 sm:mt-2">Contact Information</p>
+              </div>
 
-              <button
-                class="mt-5 font-semibold font-Poppins bg-green rounded-lg px-3 py-3 w-28 text-sm text-dark outline-none border hover:bg-dark border-green hover:text-white transition duration-300 ease-in-out"
-                type="submit"
-                id="submit"
-              >
-                Message
-              </button>
-            </form>
+              <div class="flex gap-5 text-white items-center cursor-pointer">
+                
+                <i class="ri-phone-fill text-xl"></i>
+                <div class="gap-2">
+                  <h1 class="text-base font-Poppins font-medium">Call Us</h1>
+                  <a href="tel:+918910414494">
+                    <p class="text-sm font-Poppins text-lightText">+918910414494</p>
+                  </a>
+                </div>
+              </div>
+  
+              <div class="flex gap-5 text-white items-center">
+                <i class="ri-mail-line text-xl"></i>
+                <div class="gap-2">
+                  <h1 class="text-base font-Poppins font-medium">Our Mail</h1>
+                  <a href="mailto:iamsaikat87@gmail.com">
+                    <p class="text-sm font-Poppins text-lightText">
+                      iamsaikat87@gmail.com
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <hr class="w-[80%]">
+
+              <div>
+                <p class="text-2xl text-white font-semibold">Follow Us:</p>
+
+                <div class="flex gap-3 mt-5">
+                  <a
+                    class="text-dark text-center bg-green border border-green hover:bg-dark p-3 rounded-full hover:text-white transition duration-300 ease-in-out"
+                    href="https://wa.me/+918910414494"
+                    target="_blank"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-5 w-5"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                      />
+                    </svg>
+                  </a>
+    
+                  <a
+                    class="text-dark text-center border border-green bg-green hover:bg-dark p-3 rounded-full hover:text-white transition duration-300 ease-in-out"
+                    href="https://www.facebook.com/DebikaProductionHouse"
+                    target="_blank"
+                    ><svg viewBox="0 0 320 512" class="h-5 w-5">
+                      <path
+                        fill="currentColor"
+                        d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                      ></path>
+                    </svg>
+                  </a>
+    
+                  <a
+                    class="text-dark text-center border border-green bg-green hover:bg-dark p-3 rounded-full hover:text-white transition duration-300 ease-in-out"
+                    href="https://www.instagram.com/debikaproduction"
+                    target="_blank"
+                    ><svg viewBox="0 0 448 512" class="h-5 w-5">
+                      <path
+                        fill="currentColor"
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
@@ -628,7 +642,7 @@
               <img class="w-[90px]" src="./assets/img/logo.png" />
             </a>
 
-            <p class="text-white text-sm w-[80%] leading-6 mt-5 font-medium">
+            <p class="text-lightText text-sm w-[80%] leading-6 mt-5 font-medium">
               Debika Production House is a premier photography studio with a
               passion for capturing the essence of every moment, our team of
               skilled professionals brings creativity and expertise to every
@@ -715,6 +729,7 @@
 
           <div class="w-[90%] sm:w-1/3 flex flex-col gap-4">
             <h3 class="text-2xl font-semibold">Contact Information</h3>
+
             <div class="flex gap-5 text-white items-center mt-5">
               <i class="ri-map-pin-2-line w-5 h-5 text-xl"></i>
               <div class="gap-2">
@@ -762,6 +777,7 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- <script src="wow.min.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

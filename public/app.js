@@ -33,12 +33,12 @@ var typed = new Typed(".auto-type",{
     loop:true
 })
 
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
-    new WOW().init();
+  AOS.init();
 })
-
-// <!------------------ FORM SUBMISSION -------------------->
-
 
 // <!------------------ SCROLL ANIMATION -------------------->
 function scrollToSection(sectionId){
