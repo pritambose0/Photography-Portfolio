@@ -37,7 +37,7 @@ var typed = new Typed(".auto-type",{
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  AOS.init();
+  new WOW().init();
 })
 
 // <!------------------ SCROLL ANIMATION -------------------->
