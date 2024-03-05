@@ -799,10 +799,6 @@ video {
   width: 100%;
 }
 
-.w-\[95\%\] {
-  width: 95%;
-}
-
 .scale-100 {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
@@ -1203,10 +1199,6 @@ video {
     margin-bottom: 6rem;
   }
 
-  .sm\:mt-0 {
-    margin-top: 0px;
-  }
-
   .sm\:mt-2 {
     margin-top: 0.5rem;
   }
@@ -1276,12 +1268,12 @@ video {
     width: 40%;
   }
 
-  .md\:w-\[50\%\] {
-    width: 50%;
-  }
-
   .md\:w-\[45\%\] {
     width: 45%;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
   }
 
   .md\:grid-cols-2 {
