@@ -33,9 +33,6 @@ var typed = new Typed(".auto-type",{
     loop:true
 })
 
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
   new WOW().init();
 })
@@ -45,3 +42,9 @@ function scrollToSection(sectionId){
   const section = document.getElementById(sectionId);
   section.scrollIntoView({behavior:'smooth'})
 }
+
+// <!------------------ RIGHT CLICK DISABLE -------------------->
+
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+}, false)
